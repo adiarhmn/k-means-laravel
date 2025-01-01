@@ -13,8 +13,7 @@ Route::middleware([])
     ->controller(PublicController::class)
     ->group(function () {
         Route::get('/', 'index');
-        Route::get('/about', 'about');
-        Route::get('/contact', 'contact');
+        // Route::get()
     });
 
 
@@ -23,3 +22,5 @@ Route::middleware([])
 | Algorithm Routes
 |--------------------------------------------------------------------------
 */
+
+

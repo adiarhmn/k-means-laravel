@@ -10,7 +10,8 @@
     </title>
 
     <!-- Fonts Source Code Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap">
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -18,7 +19,17 @@
 </head>
 
 <body class="font-source-code-pro antialiased">
-    @yield('content')
+    <div class="min-h-screen flex flex-col bg-gray-100">
+        <main class="flex-grow px-5 md:px-28">
+            @yield('content')
+        </main>
+        <footer class="">
+            <div class="container py-10 text-center text-gray-500 text-xs md:text-sm">
+                <p>&copy; {{ date('Y') }} {{ config('app.name') }} All rights reserved.</p>
+                <p>Developed by Adi Aulia Rahman</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

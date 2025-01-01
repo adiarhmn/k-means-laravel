@@ -15,6 +15,19 @@ export default {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
                 "source-code-pro": ["Source Code Pro", ...defaultTheme.fontFamily.mono],
             },
+            fontSize: {
+                xs: ['0.6rem'],
+            },
+        },
+    },
+    container:{
+        center:true,
+        padding: {
+            DEFAULT: "1rem",
+            sm: "2rem",
+            lg: "4rem",
+            xl: "5rem",
+            "2xl": "6rem",
         },
     },
     plugins: [],
