@@ -1,7 +1,25 @@
 <?php
 
+use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*
+|--------------------------------------------------------------------------
+| Public Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::middleware([])
+    ->controller(PublicController::class)
+    ->group(function () {
+        Route::get('/', 'index');
+        Route::get('/about', 'about');
+        Route::get('/contact', 'contact');
+    });
+
+
+/*
+|--------------------------------------------------------------------------
+| Algorithm Routes
+|--------------------------------------------------------------------------
+*/
