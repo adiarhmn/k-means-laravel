@@ -11,7 +11,6 @@ return new class extends Migration
      */
     public function up(): void
     {
-
         /*
         Membuat table attribute untuk menampung data attribute contoh
         dari attribute siswa
